@@ -1,0 +1,135 @@
+.website-content {
+  margin: 0 auto;
+  width: 1200px;
+  margin-top: 80px;
+  margin-bottom: 24px;
+}
+.text-\[\#342828\] {
+  --tw-text-opacity: 1;
+  color: rgb(52 40 40 / var(--tw-text-opacity));
+}
+.text-\[14px\] {
+  font-size: 14px;
+}
+.py-\[18px\] {
+  padding-bottom: 18px;
+  padding-top: 18px;
+}
+.kkc-icon {
+  display: inline;
+  height: 1em;
+  vertical-align: -0.2em;
+  width: 1em;
+  fill: currentColor;
+  overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.items-start {
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+.website-content ul {
+  height: auto;
+  margin-right: 20px;
+  width: 200px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255, 255, 255, 1);
+}
+menu,
+ol,
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.website-content ul li a.active {
+  color: #007bfc;
+}
+.website-content ul li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 60px;
+  position: relative;
+  width: 100%;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  color: rgba(52, 40, 40, 0.8);
+  justify-content: center;
+  padding-bottom: 18px;
+  padding-top: 18px;
+}
+.website-content ul li a.active:before {
+  background: linear-gradient(0deg, #007bfc, #5976ee);
+  border-radius: 3px;
+  content: "";
+  height: 24px;
+  left: 0;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 6px;
+}
+.website-content-side {
+  border-radius: 6px;
+  min-height: 500px;
+  width: 980px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  padding-bottom: 30px;
+}
+.px-\[30px\] {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.website-content-side .label {
+  border-bottom: 1px solid rgba(52, 40, 40, 0.07);
+  color: rgba(52, 40, 40, 0.8);
+  font-size: 15px;
+  height: 50px;
+  line-height: 50px;
+  width: 100%;
+}
+.website-content-side .desc {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  color: rgba(52, 40, 40, 0.8);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+.mt-\[30px\] {
+  margin-top: 30px;
+}
+.mb-\[30px\] {
+  margin-bottom: 30px;
+}
+img,
+video {
+  height: auto;
+  max-width: 100%;
+}
+
+.mt-\[25px\] {
+  margin-top: 25px;
+}
+a {
+  color: inherit;
+  text-decoration: inherit;
+}

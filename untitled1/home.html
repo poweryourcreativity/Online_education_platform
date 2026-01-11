@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>首页 - 在线教育平台</title>
+    <link rel="stylesheet" href="/css/home.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-content">
+        <div
+          style="
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 60px;
+          "
+        >
+          <div class="logo">Logo</div>
+          <ul class="nav">
+            <li><a href="/home.html">首页</a></li>
+            <li>
+              <a href="#">服务</a>
+              <ul>
+                <li><a href="#">考研集训</a></li>
+                <li><a href="#">报考咨询</a></li>
+              </ul>
+            </li>
+            <li><a href="/contact.html">联系</a></li>
+            <li>
+              <a href="#">关于</a>
+              <ul>
+                <li><a href="/about.html">企业简介</a></li>
+                <li><a href="/teachers.html">讲师团队</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="search-user">
+          <label>
+            <input
+              type="text"
+              class="search-box"
+              placeholder="请输入您想查询的内容"
+            />
+          </label>
+          <div class="user-avatar"></div>
+        </div>
+      </div>
+    </header>
+
+    <div class="carousel">
+      <div class="carousel-inner">
+        <img src="/image/banner1.png" alt="Image 1" />
+        <img src="/image/banner2.png" alt="Image 2" />
+        <img src="/image/banner3.png" alt="Image 3" />
+      </div>
+      <button class="carousel-control left" onclick="prevSlide()">‹</button>
+      <button class="carousel-control right" onclick="nextSlide()">›</button>
+    </div>
+
+    <div class="announcement-container">
+      <div class="announcement-bar">
+        <img src="/image/laba.png" alt="" width="24" style="margin: 0 10px" />
+        <span id="greeting-message"></span>
+        <span id="announcement-time"></span>
+      </div>
+    </div>
+
+    <div class="course-section">
+      <div class="course-header">
+        <h2 class="module-title">精选课程</h2>
+        <div class="tabs">
+          <button class="tab-button active" onclick="showCategory('category1')">
+            艺术人文
+          </button>
+          <button class="tab-button" onclick="showCategory('category2')">
+            社会实践
+          </button>
+        </div>
+      </div>
+      <div class="course-list" id="category1">
+        <div class="course-item">
+          <img src="/image/course1.jpg" alt="Course 1" />
+          <div class="course-info">
+            <div>艺术与审美</div>
+            <p>讲师：刘老师</p>
+          </div>
+        </div>
+        <div class="course-item">
+          <img src="/image/course2.jpg" alt="Course 2" />
+          <div class="course-info">
+            <div>外国建筑赏析</div>
+            <p>讲师 2</p>
+          </div>
+        </div>
+        <div class="course-item">
+          <img src="/image/course3.jpg" alt="Course 3" />
+          <div class="course-info">
+            <div>中国古建筑：文化与鉴赏</div>
+            <p>讲师 3</p>
+          </div>
+        </div>
+        <div class="course-item">
+          <img src="/image/course4.jpg" alt="Course 4" />
+          <div class="course-info">
+            <div>走进故宫：首部殿堂级故宫课程</div>
+            <p>讲师 4</p>
+          </div>
+        </div>
+        <div class="course-item">
+          <img src="/image/course5.jpg" alt="Course 5" />
+          <div class="course-info">
+            <div>课程名称 5</div>
+            <p>讲师 5</p>
+          </div>
+        </div>
+        <div class="course-item">
+          <img src="/image/course6.jpg" alt="Course 6" />
+          <div class="course-info">
+            <div>课程名称 6</div>
+            <p>讲师 6</p>
+          </div>
+        </div>
+        <div class="course-item">
+          <img src="/image/course7.jpg" alt="Course 7" />
+          <div class="course-info">
+            <div>课程名称 7</div>
+            <p>讲师 7</p>
+          </div>
+        </div>
+        <div class="course-item">
+          <img src="/image/course8.jpg" alt="Course 8" />
+          <div class="course-info">
+            <div>课程名称 8</div>
+            <p>讲师 8</p>
+          </div>
+        </div>
+      </div>
+      <div class="course-list" id="category2" style="display: none">
+        <div class="course-item">
+          <img src="/image/course9.png" alt="Course 9" />
+          <div class="course-info">
+            <div>大学生创客马拉松</div>
+            <p>讲师 5</p>
+          </div>
+        </div>
+        <div class="course-item">
+          <img src="/image/course10.jpg" alt="Course 10" />
+          <div class="course-info">
+            <div>“红色筑梦”社会实践理论基础</div>
+            <p>讲师 6</p>
+          </div>
+        </div>
+        <div class="course-item">
+          <img src="/image/course11.jpg" alt="Course 11" />
+          <div class="course-info">
+            <div>青年红色筑梦-艾灸行实践课</div>
+            <p>讲师 7</p>
+          </div>
+        </div>
+        <div class="course-item">
+          <img src="/image/course12.png" alt="Course 12" />
+          <div class="course-info">
+            <div>社会实践</div>
+            <p>讲师 8</p>
+          </div>
+        </div>
+        <div class="course-item">
+          <img src="/image/course13.jpg" alt="Course 13" />
+          <div class="course-info">
+            <div>旅游产品设计创新与实践</div>
+            <p>讲师 8</p>
+          </div>
+        </div>
+        <div class="course-item">
+          <img src="/image/course14.png" alt="Course 14" />
+          <div class="course-info">
+            <div>思想政治理论实践课</div>
+            <p>讲师 8</p>
+          </div>
+        </div>
+        <div class="course-item">
+          <img src="/image/course15.png" alt="Course 15" />
+          <div class="course-info">
+            <div>文化产业政策与法规</div>
+            <p>讲师 8</p>
+          </div>
+        </div>
+        <div class="course-item">
+          <img src="/image/course16.png" alt="Course 16" />
+          <div class="course-info">
+            <div>电子信息类教育扶贫</div>
+            <p>讲师 8</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-sections">
+          <div class="footer-section">
+            <h3>关于我们</h3>
+            <p>
+              在线教育平台致力于为用户提供优质的在线学习资源，连接世界各地的学者和学生，创造无限学习机会。
+            </p>
+          </div>
+          <div class="footer-section">
+            <h3>联系我们</h3>
+            <p>Email: contact@example.com</p>
+            <p>电话: +86 123 456 7890</p>
+            <p>地址: 中国北京市中关村大道1号</p>
+          </div>
+          <div class="footer-section">
+            <h3>关注我们</h3>
+            <div class="social-media">
+              <a href="#"
+                ><img src="/image/facebook.svg" alt="facebook" width="16"
+              /></a>
+              <a href="#"><img src="/image/qq.svg" alt="qq" width="16" /></a>
+              <a href="#"
+                ><img src="/image/weibo.svg" alt="weibo" width="16"
+              /></a>
+              <a href="#"
+                ><img src="/image/weixin.svg" alt="weixin" width="16"
+              /></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>© 2024 在线教育平台. 保留所有权利。</p>
+        </div>
+      </div>
+    </footer>
+
+    <script type="text/javascript" src="/js/home.js"></script>
+  </body>
+</html>
